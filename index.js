@@ -40,7 +40,7 @@ function checkRule(rule) {
     if (rule.selectors) {
         rule.selectors.forEach(function(selector) {
             if (selector.length > 20) {
-                console.log('Line ' + rule.position.start.line + ': too long selector "' + selector + '"');
+                console.log('Line ' + rule.position.start.line + ': selector too long "' + selector + '"');
             }
         });
     }
